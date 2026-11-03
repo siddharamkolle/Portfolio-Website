@@ -1,11 +1,18 @@
+
+import portrait from '../assets/portrait.png';
+import certificate from '../assets/certificate-skillinfytech.svg';
+
+// =========================
+// PROFILE
+// =========================
+
 export const profile = {
   name: "Siddharam Kolle",
   role: "Web3 & Application Developer",
   tagline: "Build Beyond Limits",
   subTagline: "Nothing Changes Until You Build It",
-  photo: "/src/assets/portrait.png",
+  photo: portrait,
 
-  // Shortened bio (~70% of original length, crisp & punchy)
   bio: "I’m a Computer Science Engineering student focused on Blockchain and Web3 development, with a strong interest in smart contract engineering and decentralized systems. I turn complex problems into scalable, practical solutions—from DApp frontends to smart contract protocols. Currently sharpening my Solidity and EVM foundations while building impactful decentralized applications.",
 
   education: {
@@ -122,7 +129,7 @@ export const skills = {
 
 
 // =========================
-// INITIAL TIMELINE (CAREER & EDUCATION)
+// INITIAL TIMELINE
 // =========================
 
 export const initialTimeline = [
@@ -211,7 +218,10 @@ export const initialCredentials = [
     date: "August 2026",
     credentialId: "SI-BT-2026-08819",
     verifyUrl: "https://skillinfytech.com/verify/SI-BT-2026-08819",
-    imageUrl: "/src/assets/certificate-skillinfytech.svg",
+
+    // Imported asset for Vite production build
+    imageUrl: certificate,
+
     description:
       "Awarded for successfully completing the 8-Week Professional Internship in Blockchain Technology, demonstrating excellence in smart contract engineering, EVM architecture, testing, and decentralized application development.",
     skills: [
@@ -228,7 +238,7 @@ export const initialCredentials = [
 
 
 // =========================
-// EXPERIENCE (Legacy export kept for backwards compatibility)
+// EXPERIENCE
 // =========================
 
 export const experience = {
